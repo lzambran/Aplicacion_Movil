@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity"
+    android:background="@color/design_default_color_secondary">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Luis Antonio Zambrano Demera"
+    android:textColor="@color/red"
+    android:textAlignment="center"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="36dp" />
+
+<EditText
+    android:id="@+id/input"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="20dp"
+    android:inputType="number"
+    android:text="0"
+    tools:ignore="MissingConstraints"
+    android:textAlignment="center"
+    tools:layout_editor_absoluteX="20dp"
+    tools:layout_editor_absoluteY="84dp" />
+
+<TextView
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="36dp" />
+
+
+    <RadioGroup
+        android:layout_width="399dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+
+        <RadioButton
+            android:id="@+id/centigrado"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+          android:layout_marginLeft="6dp"
+            android:background="#DBE4DD"
+            android:text="Fahrenheit => Centigrado"
+            android:textColor="@color/red"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:id="@+id/fahrenheit"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="-50dp"
+            android:background="#DBE4DD"
+            android:text="Centigrado => Fahrenheit"
+            android:textSize="13dp" />
+    </RadioGroup>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:textColor="@color/red"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+
+</LinearLayout>
+
+</LinearLayout>
